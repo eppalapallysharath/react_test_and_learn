@@ -15,8 +15,8 @@ function App() {
     </div>
     <mycontext.Provider value={{ data, setCounter}}>
     <Dashboard/>
-    </mycontext.Provider>
     <Todos/>
+    </mycontext.Provider>
     </>
   )
 }

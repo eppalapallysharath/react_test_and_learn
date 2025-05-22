@@ -7,7 +7,6 @@ const Dashboard = () => {
     const {setCounter} = context
   return (
     <div>Dashboard
-
         <button onClick={()=>setCounter((prev)=> prev + 1)}> count increment</button>
         <h1>{context.age}</h1>
     </div>
