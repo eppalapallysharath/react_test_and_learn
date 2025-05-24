@@ -1,23 +1,11 @@
-import Dashboard from "./components/Dashboard"
-import Todos from "./components/Todos"
-import { createContext, useState } from "react"
+import React from 'react'
+import SimpleForm from './components/SimpleForm'
 
-const data = {name: "sharath", age: 20}
-
-export const mycontext = createContext(data)
-
-function App() {
-  const [counter, setCounter] = useState(0)
+const App = () => {
   return (
-    <>
     <div>
-      <h5>{counter}</h5>
+      <SimpleForm/>
     </div>
-    <mycontext.Provider value={{ data, setCounter}}>
-    <Dashboard/>
-    <Todos/>
-    </mycontext.Provider>
-    </>
   )
 }
 
